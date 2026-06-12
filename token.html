@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            text-align: left;
+            word-break: break-all;
+            display: none;
+        }
+        .result p {
+            margin: 5px 0;
+        }
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Enter Your Details</h2>
+    <input type="text" id="userName" placeholder="Write Name here (e.g., abcdef)">
+    <br>
+    <button onclick="generateToken()">Submit</button>
+
+    <div id="resultBox" class="result">
+        <p><span class="bold">Your token name:</span> <span id="displayName"></span></p>
+        <p><span class="bold">Token URL:</span> <span id="displayUrl"></span></p>
+    </div>
+</div>
+
+<script>
+    function generateToken() {
+        // Input se name get karna
+        var nameInput = document.getElementById("userName").value.trim();
+        
+        // Agar input khali na ho
+        if (nameInput !== "") {
+            // Name display karwana
+            document.getElementById("displayName").textContent = nameInput;
+            
+            // Fixed URL display karwana
+            var fixedUrl = "0719191518://abj0300a05e-ehij-hgcb-ifaf-00f0001a010302f02df.0017041300.18081904/?0412010403=19172004";
+            document.getElementById("displayUrl").textContent = fixedUrl;
+            
+            // Result box ko show karna
+            document.getElementById("resultBox").style.display = "block";
+        } else {
+            alert("Please enter a name first!");
+        }
+    }
+</script>
+
+</body>
+</html>
