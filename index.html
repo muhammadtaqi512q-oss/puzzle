@@ -1,330 +1,476 @@
-<!DOCTYPE html>
+
+
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Console • Encoded Reveal</title>
+  <head>
+   <!-- ==================== WEBSITE BUILDER (M-BOX/AI) META TAGS ==================== -->
+<!-- 1 -->
+<meta charset="UTF-8">
+<!-- 2 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 3 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 4 -->
+<meta name="description" content="M-BOX/AI - AI-powered website builder by Muhammad Taqi, CEO of NexuraStack. Build stunning sites effortlessly.">
+<!-- 5 -->
+<meta name="keywords" content="website builder, AI website builder, no-code, drag-and-drop, Muhammad Taqi, NexuraStack, M-BOX, AI powered">
+<!-- 6 -->
+<meta name="author" content="Muhammad Taqi">
+<!-- 7 -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<!-- 8 -->
+<meta name="googlebot" content="index, follow">
+<!-- 9 -->
+<meta name="revisit-after" content="7 days">
+<!-- 10 -->
+<meta name="language" content="English">
+<!-- 11 -->
+<meta name="distribution" content="global">
+<!-- 12 -->
+<meta name="rating" content="general">
+<!-- 13 -->
+<meta name="classification" content="Web Development, AI Technology">
+<!-- 14 -->
+<meta name="copyright" content="© 2026 NexuraStack. All rights reserved.">
+<!-- 15 -->
+<meta name="designer" content="Muhammad Taqi">
+<!-- 16 -->
+<meta name="owner" content="Muhammad Taqi">
+<!-- 17 -->
+<meta name="subject" content="AI Website Builder">
+<!-- 18 -->
+<meta name="topic" content="Website Building with AI">
+<!-- 19 -->
+<meta name="category" content="Technology">
+<!-- 20 -->
+<meta property="og:title" content="M-BOX/AI - AI-Powered Website Builder | NexuraStack">
+<!-- 21 -->
+<meta property="og:type" content="website">
+<!-- 22 -->
+<meta property="og:url" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI">
+<!-- 23 -->
+<meta property="og:image" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/og-image.jpg">
+<!-- 24 -->
+<meta property="og:image:secure_url" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/og-image.jpg">
+<!-- 25 -->
+<meta property="og:image:type" content="image/jpeg">
+<!-- 26 -->
+<meta property="og:image:width" content="1200">
+<!-- 27 -->
+<meta property="og:image:height" content="630">
+<!-- 28 -->
+<meta property="og:image:alt" content="M-BOX/AI - AI Website Builder interface preview">
+<!-- 29 -->
+<meta property="og:description" content="Create AI-driven websites effortlessly. M-BOX/AI by Muhammad Taqi empowers you to build modern web experiences without coding.">
+<!-- 30 -->
+<meta property="og:site_name" content="NexuraStack">
+<!-- 31 -->
+<meta property="og:locale" content="en_US">
+<!-- 32 -->
+<meta property="og:locale:alternate" content="ur_PK">
+<!-- 33 -->
+<meta property="og:see_also" content="https://wwwt.oneapp.dev/">
+<!-- 34 -->
+<meta property="og:see_also" content="https://www.facebook.com/nexurastack/">
+<!-- 35 -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- 36 -->
+<meta name="twitter:site" content="@NexuraStack">
+<!-- 37 -->
+<meta name="twitter:creator" content="@MuhammadTaqi">
+<!-- 38 -->
+<meta name="twitter:title" content="M-BOX/AI - AI-Powered Website Builder">
+<!-- 39 -->
+<meta name="twitter:description" content="Build websites with AI. M-BOX/AI by Muhammad Taqi (CEO NexuraStack) makes web creation fast, smart and code-free.">
+<!-- 40 -->
+<meta name="twitter:image" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/og-image.jpg">
+<!-- 41 -->
+<meta name="twitter:image:alt" content="M-BOX/AI builder dashboard">
+<!-- 42 -->
+<meta name="theme-color" content="#4F46E5">
+<!-- 43 -->
+<meta name="msapplication-TileColor" content="#4F46E5">
+<!-- 44 -->
+<meta name="msapplication-TileImage" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/favicon-144.png">
+<!-- 45 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 46 -->
+<meta name="apple-mobile-web-app-title" content="M-BOX AI">
+<!-- 47 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 48 -->
+<meta name="format-detection" content="telephone=no">
+<!-- 49 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 50 -->
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- ==================== API BUILDER META TAGS ==================== -->
+<!-- 51 -->
+<meta charset="UTF-8">
+<!-- 52 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 53 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 54 -->
+<meta name="description" content="NexuraStack API Builder - Visually design and deploy robust APIs with AI assistance, by Muhammad Taqi.">
+<!-- 55 -->
+<meta name="keywords" content="API builder, visual API designer, AI API generator, Muhammad Taqi, NexuraStack, backend builder">
+<!-- 56 -->
+<meta name="author" content="Muhammad Taqi">
+<!-- 57 -->
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<!-- 58 -->
+<meta name="googlebot" content="index, follow">
+<!-- 59 -->
+<meta name="revisit-after" content="7 days">
+<!-- 60 -->
+<meta name="language" content="English">
+<!-- 61 -->
+<meta name="distribution" content="global">
+<!-- 62 -->
+<meta name="rating" content="general">
+<!-- 63 -->
+<meta name="classification" content="API Development, Backend Technology">
+<!-- 64 -->
+<meta name="copyright" content="© 2026 NexuraStack. All rights reserved.">
+<!-- 65 -->
+<meta name="designer" content="Muhammad Taqi">
+<!-- 66 -->
+<meta name="owner" content="Muhammad Taqi">
+<!-- 67 -->
+<meta name="subject" content="AI API Builder">
+<!-- 68 -->
+<meta name="topic" content="Build APIs with AI visually">
+<!-- 69 -->
+<meta name="category" content="Technology">
+<!-- 70 -->
+<meta property="og:title" content="NexuraStack API Builder - Visual AI-Powered API Designer | by Muhammad Taqi">
+<!-- 71 -->
+<meta property="og:type" content="website">
+<!-- 72 -->
+<meta property="og:url" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/api-builder">
+<!-- 73 -->
+<meta property="og:image" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/api-builder-og.jpg">
+<!-- 74 -->
+<meta property="og:image:secure_url" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/api-builder-og.jpg">
+<!-- 75 -->
+<meta property="og:image:type" content="image/jpeg">
+<!-- 76 -->
+<meta property="og:image:width" content="1200">
+<!-- 77 -->
+<meta property="og:image:height" content="630">
+<!-- 78 -->
+<meta property="og:image:alt" content="NexuraStack API Builder interface showing AI-driven endpoint creation">
+<!-- 79 -->
+<meta property="og:description" content="Build and deploy APIs visually with AI. NexuraStack API Builder, created by Muhammad Taqi, simplifies backend development.">
+<!-- 80 -->
+<meta property="og:site_name" content="NexuraStack">
+<!-- 81 -->
+<meta property="og:locale" content="en_US">
+<!-- 82 -->
+<meta property="og:locale:alternate" content="ur_PK">
+<!-- 83 -->
+<meta property="og:see_also" content="https://wwwt.oneapp.dev/">
+<!-- 84 -->
+<meta property="og:see_also" content="https://www.youtube.com/@MuhammadTaqi-w6t">
+<!-- 85 -->
+<meta name="twitter:card" content="summary_large_image">
+<!-- 86 -->
+<meta name="twitter:site" content="@NexuraStack">
+<!-- 87 -->
+<meta name="twitter:creator" content="@MuhammadTaqi">
+<!-- 88 -->
+<meta name="twitter:title" content="NexuraStack API Builder - AI-Powered API Design">
+<!-- 89 -->
+<meta name="twitter:description" content="Create APIs in a visual, AI-assisted environment. NexuraStack API Builder by Muhammad Taqi makes backend creation intuitive.">
+<!-- 90 -->
+<meta name="twitter:image" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/api-builder-og.jpg">
+<!-- 91 -->
+<meta name="twitter:image:alt" content="API builder AI interface">
+<!-- 92 -->
+<meta name="theme-color" content="#0ea5e9">
+<!-- 93 -->
+<meta name="msapplication-TileColor" content="#0ea5e9">
+<!-- 94 -->
+<meta name="msapplication-TileImage" content="https://muhammadtaqi512q-oss.github.io/M-BOX/AI/api-favicon-144.png">
+<!-- 95 -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<!-- 96 -->
+<meta name="apple-mobile-web-app-title" content="API Builder">
+<!-- 97 -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- 98 -->
+<meta name="format-detection" content="telephone=no">
+<!-- 99 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 100 -->
+<meta name="mobile-web-app-capable" content="yes">
+    <title>MT | Web Builder API</title>
+   
     <style>
-        :root {
-            --bg: #0a0a0f;
-            --surface: #12121a;
-            --border: #1e1e2e;
-            --text: #c8c8d4;
-            --accent: #00e5a0;
-            --accent-glow: #00e5a066;
-            --red: #ff4757;
-        }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body {
-            font-family:'Segoe UI','SF Pro Display','Inter',system-ui,sans-serif;
-            background:var(--bg); color:var(--text);
-            height:100vh; width:100vw; overflow:hidden;
-            display:flex; align-items:center; justify-content:center;
-            user-select:none;
-        }
-        body::before {
-            content:''; position:fixed; inset:0;
-            background:
-                linear-gradient(rgba(255,255,255,0.015) 1px,transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.015) 1px,transparent 1px);
-            background-size:40px 40px;
-            animation:gridShift 20s linear infinite;
-            pointer-events:none; z-index:0;
-        }
-        @keyframes gridShift {
-            0%{background-position:0 0,0 0;} 100%{background-position:40px 40px,40px 40px;}
-        }
-        .particles { position:fixed; inset:0; pointer-events:none; z-index:0; }
-        .particle {
-            position:absolute; border-radius:50%; background:var(--accent); opacity:0;
-            animation:floatUp 6s ease-in infinite;
-        }
-        @keyframes floatUp {
-            0%{opacity:0;transform:translateY(100vh) scale(0);}
-            10%{opacity:0.6;} 30%{opacity:0.2;}
-            100%{opacity:0;transform:translateY(-10vh) scale(1.5);}
-        }
-        .initial-container, .code-container {
-            position:relative; z-index:10; display:flex; flex-direction:column; align-items:center;
-            gap:28px; transition:all 0.6s cubic-bezier(0.4,0,0.2,1); opacity:1; transform:translateY(0);
-            pointer-events:all;
-        }
-        .initial-container.fade-out, .code-container.fade-out {
-            opacity:0; transform:translateY(-30px); pointer-events:none;
-        }
-        .code-container { display:none; width:90%; max-width:900px; gap:20px; }
-        .code-container.active { display:flex; }
-        .btn-wrapper { position:relative; }
-        .btn-wrapper::before {
-            content:''; position:absolute; width:180px; height:180px; border-radius:50%;
-            border:1px solid var(--accent-glow); animation:ringPulse 2.5s ease-in-out infinite;
-            pointer-events:none; left:50%; top:50%; transform:translate(-50%,-50%);
-        }
-        @keyframes ringPulse {
-            0%,100%{transform:translate(-50%,-50%) scale(1);opacity:0.3;}
-            50%{transform:translate(-50%,-50%) scale(1.25);opacity:0.7;}
-        }
-        .get-api-btn {
-            position:relative; z-index:2; padding:18px 48px; font-size:1.1rem; font-weight:700;
-            letter-spacing:0.06em; text-transform:uppercase; color:#0a0a0f; background:var(--accent);
-            border:none; border-radius:50px; cursor:pointer; transition:all 0.35s ease;
-            box-shadow:0 0 40px var(--accent-glow),0 0 80px rgba(0,229,160,0.2); font-family:inherit;
-        }
-        .get-api-btn:hover { transform:translateY(-2px); box-shadow:0 0 60px var(--accent-glow),0 0 120px rgba(0,229,160,0.35); }
-        .get-api-btn:active { transform:scale(0.95); }
-        .get-api-btn.clicked {
-            background:var(--surface); color:var(--accent); pointer-events:none;
-            box-shadow:0 0 0 2px var(--accent),0 0 30px var(--accent-glow);
-        }
-        .name-section {
-            display:flex; flex-direction:column; align-items:center; gap:14px;
-            max-height:0; opacity:0; overflow:hidden; transition:all 0.5s ease; pointer-events:none;
-        }
-        .name-section.visible { max-height:200px; opacity:1; pointer-events:all; }
-        .name-label { font-size:0.85rem; letter-spacing:0.08em; text-transform:uppercase; color:#8888a0; }
-        .name-input-row { display:flex; gap:10px; align-items:center; }
-        .name-input {
-            padding:13px 20px; font-size:1rem; border-radius:30px; border:2px solid var(--border);
-            background:var(--surface); color:#fff; outline:none; width:240px; transition:all 0.3s ease;
-            font-family:inherit;
-        }
-        .name-input:focus { border-color:var(--accent); box-shadow:0 0 25px var(--accent-glow); }
-        .submit-btn {
-            padding:13px 26px; font-size:0.9rem; font-weight:600; letter-spacing:0.05em;
-            text-transform:uppercase; border-radius:30px; border:2px solid var(--accent);
-            background:transparent; color:var(--accent); cursor:pointer; font-family:inherit;
-        }
-        .submit-btn:hover { background:var(--accent); color:#0a0a0f; }
-        .loading-dots { display:none; gap:6px; align-items:center; }
-        .loading-dots.active { display:flex; }
-        .loading-dots span {
-            width:8px; height:8px; border-radius:50%; background:var(--accent);
-            animation:dotBounce 1.2s ease-in-out infinite;
-        }
-        .loading-dots span:nth-child(2){ animation-delay:0.2s; }
-        .loading-dots span:nth-child(3){ animation-delay:0.4s; }
-        @keyframes dotBounce {
-            0%,80%,100%{transform:translateY(0);opacity:0.3;} 40%{transform:translateY(-16px);opacity:1;}
-        }
-        .code-box {
-            width:100%; background:var(--surface); border:1px solid var(--border);
-            border-radius:12px; overflow:hidden; box-shadow:0 8px 30px rgba(0,0,0,0.5);
-        }
-        .code-header {
-            display:flex; justify-content:space-between; align-items:center;
-            padding:12px 16px; background:#1a1a24; border-bottom:1px solid var(--border);
-        }
-        .code-header span { font-size:0.8rem; letter-spacing:0.05em; color:#aaa; font-weight:600; }
-        .copy-btn {
-            background:var(--accent); color:#0a0a0f; border:none; padding:6px 16px;
-            border-radius:20px; font-weight:600; font-size:0.75rem; cursor:pointer;
-            font-family:inherit; letter-spacing:0.04em; transition:all 0.2s;
-        }
-        .copy-btn:hover { background:#00f0a8; box-shadow:0 0 12px var(--accent-glow); }
-        .copy-btn.copied { background:#444; color:#fff; pointer-events:none; }
-        pre {
-            margin:0; padding:20px; overflow-x:auto; background:#0d0d12; color:#e0e0e0;
-            font-family:'Fira Code','Cascadia Code','JetBrains Mono',monospace;
-            font-size:0.8rem; line-height:1.6; white-space:pre-wrap; word-break:break-word;
-        }
-        .back-btn {
-            background:transparent; color:#ccc; border:1px solid rgba(255,255,255,0.2);
-            padding:8px 22px; border-radius:20px; font-size:0.8rem; cursor:pointer;
-            letter-spacing:0.04em; transition:all 0.3s; font-family:inherit;
-        }
-        .back-btn:hover { background:rgba(255,255,255,0.08); color:#fff; }
-        .toast {
-            position:fixed; bottom:30px; left:50%; transform:translateX(-50%) translateY(100px);
-            background:var(--surface); color:var(--accent); padding:12px 24px; border-radius:30px;
-            font-size:0.85rem; z-index:300; opacity:0; transition:all 0.4s ease; pointer-events:none;
-            border:1px solid var(--border);
-        }
-        .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+      * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: #f5f5f5;
+}
+
+/* Banner styles */
+.floating-banner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  will-change: transform, opacity;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100px) translateZ(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateZ(0);
+    opacity: 1;
+  }
+}
+
+.floating-banner.dismissed {
+  animation: slideOut 0.3s ease-out forwards;
+}
+
+@keyframes slideOut {
+  to {
+    transform: translateY(100px) translateZ(0);
+    opacity: 0;
+  }
+}
+
+.banner-padding {
+  padding: 10px 16px;
+}
+
+.banner-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banner-logo {
+  display: flex;
+  align-items: center;
+  color: #2d2d2d;
+  flex-shrink: 0;
+}
+
+.banner-logo svg {
+  height: 28px;
+  width: auto;
+}
+
+.banner-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.banner-text {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.banner-upper-text {
+  color: #151617;
+  font-size: 14px;
+}
+
+.banner-lower-text {
+  color: #878c9f;
+  font-size: 10px;
+}
+
+.banner-action-container {
+  border-left: 1px solid rgba(45, 47, 53, 0.08);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+
+.action-btn:hover {
+  color: #2d2d2d;
+}
+
+/* Iframe container styles */
+.iframe-container {
+  flex: 1;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  min-height: 0;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
     </style>
-</head>
-<body>
+  </head>
+  <body data-ryu-obtrusive-scrollbars="false">
+    <svg style="display: none">
+      <symbol
+        id="icon-flag"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path
+          d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"
+        />
+      </symbol>
+      <symbol
+        id="icon-close"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </symbol>
+    </svg>
 
-    <div class="particles" id="particles"></div>
-
-    <!-- Initial UI -->
-    <div class="initial-container" id="initialContainer">
-        <div class="btn-wrapper">
-            <button class="get-api-btn" id="getApiBtn">GET API</button>
-        </div>
-        <div class="name-section" id="nameSection">
-            <span class="name-label">Enter your identifier</span>
-            <div class="name-input-row">
-                <input type="text" class="name-input" id="nameInput" placeholder="Write your name..." maxlength="40" autocomplete="off">
-                <button class="submit-btn" id="submitBtn">Access</button>
-            </div>
-            <div class="loading-dots" id="loadingDots">
-                <span></span><span></span><span></span>
-            </div>
-        </div>
+    <div class="iframe-container">
+      <iframe
+        id="preview-iframe"
+         src="https://019ebbaa-9be4-7ab8-96fa-6442ed49462b.arena.site/?embed=true"
+        sandbox="allow-scripts allow-same-origin allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-popups allow-popups-to-escape-sandbox allow-downloads allow-top-navigation-by-user-activation"
+        allow="
+          accelerometer;
+          autoplay;
+          camera;
+          encrypted-media;
+          fullscreen;
+          geolocation;
+          gyroscope;
+          microphone;
+          midi;
+          clipboard-read;
+          clipboard-write;
+          usb;
+          vr;
+          xr-spatial-tracking;
+          screen-wake-lock;
+          magnetometer;
+          ambient-light-sensor;
+          battery;
+          gamepad;
+          picture-in-picture;
+          display-capture;
+          bluetooth;
+        "
+        referrerpolicy="origin-when-cross-origin"
+      ></iframe>
     </div>
 
-    <!-- Code Display -->
-    <div class="code-container" id="codeContainer">
-        <div class="code-box">
-            <div class="code-header">
-                <span>📄 Self-decoding HTML (link hidden)</span>
-                <button class="copy-btn" id="copyBtn">📋 Copy Code</button>
-            </div>
-            <pre><code id="codeBlock"></code></pre>
-        </div>
-        <button class="back-btn" id="backBtnFromCode">← Back to Start</button>
-    </div>
-
-    <div class="toast" id="toast"></div>
-
     <script>
-        // ---- SELF-DECODING OUTPUT CODE ----
-        const outputCode = `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MT OK</title>
-    <style>
-        html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; background:#000; }
-        iframe { width:100%; height:100%; border:none; display:block; }
-    </style>
-</head>
-<body>
-    <iframe id="frm" allowfullscreen></iframe>
-    <script>
-        // Encoded link – looks like nonsense
-        var _ = "0719191518://abj0300a05e-ehij-hgcb-ifaf-00f0001a010302f02df.0017041300.18081904/?0412010403=19172004";
-        (function(){
-            var d='',i=0,ch;
-            while(i<_.length){
-                ch=_[i];
-                if(/[a-j]/.test(ch)){
-                    d+={a:'0',b:'1',c:'2',d:'3',e:'4',f:'5',g:'6',h:'7',i:'8',j:'9'}[ch];
-                    i++;
-                } else if(/[0-9]/.test(ch)){
-                    if(i+1<_.length && /[0-9]/.test(_[i+1])){
-                        var n=parseInt(_.substr(i,2),10);
-                        d+=String.fromCharCode(97+n);
-                        i+=2;
-                    } else {
-                        d+=String.fromCharCode(97+parseInt(ch,10));
-                        i++;
-                    }
-                } else {
-                    d+=ch;
-                    i++;
-                }
-            }
-            document.getElementById('frm').src=d;
-        })();
-    <\/script>
-</body>
-</html>`;
+      const iframe = document.getElementById("preview-iframe");
+      iframe.addEventListener("load", () => iframe.focus());
 
-        // DOM elements
-        const initialContainer = document.getElementById('initialContainer');
-        const getApiBtn = document.getElementById('getApiBtn');
-        const nameSection = document.getElementById('nameSection');
-        const nameInput = document.getElementById('nameInput');
-        const submitBtn = document.getElementById('submitBtn');
-        const loadingDots = document.getElementById('loadingDots');
-        const codeContainer = document.getElementById('codeContainer');
-        const codeBlock = document.getElementById('codeBlock');
-        const copyBtn = document.getElementById('copyBtn');
-        const backBtnFromCode = document.getElementById('backBtnFromCode');
-        const toast = document.getElementById('toast');
-
-        codeBlock.textContent = outputCode;
-
-        // Particles
-        (function createParticles(){
-            const c = document.getElementById('particles');
-            for(let i=0;i<30;i++){
-                const p = document.createElement('div');
-                p.className='particle';
-                p.style.width=(Math.random()*3+1.5)+'px';
-                p.style.height=p.style.width;
-                p.style.left=Math.random()*100+'%';
-                p.style.animationDuration=(Math.random()*8+5)+'s';
-                p.style.animationDelay=Math.random()*7+'s';
-                c.appendChild(p);
-            }
-        })();
-
-        function showToast(msg,d=2200){
-            toast.textContent=msg; toast.classList.add('show');
-            clearTimeout(toast._t); toast._t=setTimeout(()=>toast.classList.remove('show'),d);
+      document.addEventListener("DOMContentLoaded", () => {
+        if (!hasStorageKey("code_reported") || !hasStorageKey("survey_completed")) {
+          document.querySelector(".report-content-btn").style.display = "block";
         }
+      });
 
-        // GET API button
-        let apiClicked=false;
-        getApiBtn.addEventListener('click',()=>{
-            if(apiClicked) return;
-            apiClicked=true;
-            getApiBtn.classList.add('clicked');
-            getApiBtn.textContent='● ACTIVE';
-            setTimeout(()=>{
-                nameSection.classList.add('visible');
-                setTimeout(()=>nameInput.focus(),400);
-            },350);
-            setTimeout(()=>showToast('Identifikasi diperlukan untuk melanjutkan'),500);
-        });
+      function onCodePreviewBannerCTAClicked(event) {
+        posthog?.capture?.("code_preview_banner_cta_clicked");
+      }
 
-        function handleSubmit(){
-            const name=nameInput.value.trim();
-            if(name.length<1){
-                showToast('Silakan tulis nama Anda terlebih dahulu');
-                nameInput.style.borderColor='var(--red)';
-                nameInput.style.boxShadow='0 0 20px #ff475744';
-                setTimeout(()=>{
-                    nameInput.style.borderColor='var(--border)';
-                    nameInput.style.boxShadow='none';
-                },1200);
-                return;
-            }
-            submitBtn.style.display='none';
-            loadingDots.classList.add('active');
-            nameInput.disabled=true;
-            nameInput.style.opacity='0.5';
-            setTimeout(()=>{
-                initialContainer.classList.add('fade-out');
-                codeContainer.classList.add('active');
-                setTimeout(()=>{ initialContainer.style.display='none'; },600);
-                showToast('✅ Encoded code ready — welcome, '+name);
-            },1400+Math.random()*600);
+      function reportContent(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (!posthog || !posthog.capture || !posthog.setPersonProperties || !posthog.displaySurvey) return;
+
+        if (!hasStorageKey("survey_completed")) {
+          posthog.setPersonProperties?.({
+            last_reported_message_id: MESSAGE_ID,
+            last_report_timestamp: Date.now(),
+          });
+          posthog.displaySurvey?.(REPORT_SURVEY_ID, {
+            ignoreConditions: true,
+            ignoreDelay: true,
+          });
         }
+      }
 
-        submitBtn.addEventListener('click',handleSubmit);
-        nameInput.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); handleSubmit(); } });
+      function dismissBanner(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        posthog?.capture?.("code_preview_banner_dismiss");
 
-        copyBtn.addEventListener('click',()=>{
-            navigator.clipboard.writeText(outputCode).then(()=>{
-                copyBtn.textContent='✓ Copied!';
-                copyBtn.classList.add('copied');
-                showToast('📋 Code copied to clipboard');
-                setTimeout(()=>{
-                    copyBtn.textContent='📋 Copy Code';
-                    copyBtn.classList.remove('copied');
-                },2500);
-            }).catch(()=>showToast('❌ Copy failed. Select manually.'));
-        });
-
-        function resetAll(){
-            codeContainer.classList.remove('active');
-            initialContainer.style.display='flex';
-            setTimeout(()=>{
-                initialContainer.classList.remove('fade-out');
-                nameSection.classList.remove('visible');
-                nameInput.value=''; nameInput.disabled=false; nameInput.style.opacity='1';
-                submitBtn.style.display=''; loadingDots.classList.remove('active');
-                getApiBtn.classList.remove('clicked'); getApiBtn.textContent='GET API';
-                apiClicked=false; showToast('Sesi direset');
-            },500);
-        }
-
-        backBtnFromCode.addEventListener('click',resetAll);
-        document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&codeContainer.classList.contains('active')) resetAll(); });
+        const banner = document.getElementById("floating-banner");
+        banner.classList.add("dismissed");
+        setTimeout(() => banner.remove(), 300);
+      }
     </script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"cfb6543e268d4ceb92c8170675caa481","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
